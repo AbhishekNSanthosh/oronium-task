@@ -1,7 +1,12 @@
+import Header from '@widgets/Header/view'
 import React from 'react'
+import LandingPageContent from './components/Content'
 
 export default function LandingPageView() {
   return (
-    <div>view</div>
+   <main>
+    <Header/>
+    <LandingPageContent/>
+   </main>
   )
 }
