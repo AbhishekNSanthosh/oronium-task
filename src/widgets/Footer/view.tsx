@@ -1,3 +1,4 @@
+import ScrollToTopButton from "@components/ScrollToTop";
 import Image from "next/image";
 import React from "react";
 import { IoMdArrowRoundUp } from "react-icons/io";
@@ -8,9 +9,9 @@ export default function Footer() {
     <div className="px-[30px] h-[530px] w-full flex-row flex pt-[100px] relative">
       {/* Left Content */}
       <div className="flex-1 h-full">
-        <span>We offer adult clinics that focus on skill improvement</span>
-        <div className="absolute bottom-[50px] left-[30px] bg-[#F0F0F0] w-[350px] flex flex-row items-center rounded-full pl-2 pr-1 py-1">
-            <input type="text" className="w-full bg-[#F0F0F0] px-2 py-1 outline-none border-none" placeholder="youremail@gmail.com"/>
+        <span className="font-medium">We offer adult clinics that <br /> focus on skill improvement</span>
+        <div className="absolute bottom-[50px] left-[30px] bg-[#F0F0F0] w-[390px] flex flex-row items-center rounded-full pl-2 pr-1 py-1">
+            <input type="text" className="w-full bg-[#F0F0F0] px-2 py-1 outline-none border-none placeholder:text-gray-800" placeholder="youremail@gmail.com"/>
             <div className="bg-[#200F33] p-2 rounded-full flex items-center justify-center">
                 <IoMdSend className="text-[30px] text-white"/>
             </div>
@@ -33,9 +34,9 @@ export default function Footer() {
         </div>
 
         {/* Scroll to Top Button */}
-        <button className="absolute right-[40px] top-[0px] rounded-full border-2 border-gray-400 p-3">
-          <IoMdArrowRoundUp className="text-3xl" />
-        </button>
+        <div className="absolute right-[40px] top-[0px">
+         <ScrollToTopButton/>
+        </div>
       </div>
 
 
