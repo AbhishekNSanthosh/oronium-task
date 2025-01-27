@@ -46,7 +46,7 @@ export default function LandingPageContent() {
         </div>
         <div className="absolute bottom-[50px] left-[60px] text-white">
           <div className="relative">
-            <button className="w-[150px] h-[150px] rounded-full backdrop-blur-md border border-white flex items-center justify-center">
+            <button className="w-[150px] h-[150px] rounded-full  border border-white flex items-center justify-center">
               <MdArrowDownward className="text-[40px]" />
             </button>
             <div className="w-[150px] h-[150px] rounded-full backdrop-blur-md border border-white absolute top-[-120px] flex items-center justify-center">

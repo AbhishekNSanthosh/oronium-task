@@ -7,6 +7,7 @@ import { HiOutlineMenu } from "react-icons/hi";
 import Image from "next/image";
 import { useAsync } from "../../common/Hooks/useAsync";
 import { fetchLondonTime } from "./services/api";
+import Link from "next/link";
 
 export default function Header() {
   const formatTime = (isoTime: string): string => {
@@ -23,7 +24,7 @@ export default function Header() {
     <div className="px-[30px] py-[3vh] text-gray-900">
       <div className=" h-[10vh] bg-white rounded-full px-[25px] flex items-center flex-row">
         <div className="flex-[0.5]">
-          <span className="font-black text-[25px]">trvvrat</span>
+          <Link href={'/'} className="font-black text-[25px]">trvvrat</Link>
         </div>
         <div className="flex-[2] flex items-center justify-start flex-row">
           {loading ? (
