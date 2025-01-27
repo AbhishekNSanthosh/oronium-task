@@ -4,12 +4,10 @@ import React from "react";
 import { MdArrowDownward } from "react-icons/md";
 import { IoArrowForward } from "react-icons/io5";
 
-
 export default function LandingPageContent() {
   return (
     <div className="px-[30px] w-full py-2 mb-[140px]">
       <div className="relative">
-        {/* Background Image */}
         <Image
           src="https://firebasestorage.googleapis.com/v0/b/informatyka-4b6e6.appspot.com/o/premium_photo-1681883760386-62d77639384e.jpg?alt=media&token=08e8fb79-f091-45f4-8728-457cdb7eb602"
           alt=""
@@ -17,27 +15,17 @@ export default function LandingPageContent() {
           width={2000}
           height={2000}
         />
-
-        {/* Category Tag */}
         <div className="absolute top-[50px] left-[20px] border-white border rounded-full px-2 py-[2px] flex flex-row">
           <span className="text-white font-semibold text-sm">Lorem Ipsum</span>
         </div>
-
-        {/* Main Text & Button */}
         <div className="absolute top-[50px] left-[200px] flex flex-col text-white">
           <span className="text-[80px] font-medium mb-6 leading-tight">
             Explore the <br /> world with us
           </span>
-
-          {/* Fixed Button */}
-
-          {/* Button Container */}
           <button className="flex items-center bg-white shadow-[0px_4px_10px_rgba(0,0,0,0.2)] rounded-full overflow-hidden">
-            {/* Text */}
             <span className="px-4 py-2 font-medium text-gray-700">
               Learn more
             </span>
-            {/* Circle */}
             <div className="w-10 h-10 bg-gray-900 text-white flex items-center justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -80,11 +68,9 @@ export default function LandingPageContent() {
                 fill="#ffff"
               />
             </svg>
-            {/* Button */}
             <button className="absolute top-[7%] right-[15%] border-2 border-gray-500 p-3 rounded-full bg-white shadow-md">
               <IoArrowForward className="text-[19px]" />
             </button>
-            {/* Text */}
             <div className="absolute w-[80%] bottom-[15px] text-center px-4 text-gray-700 font-semibold flex flex-col space-y-7">
               <div className="w-full flex items-center justify-start">
               <span className="text-left text-gray-800 text-[23px] font-semibold">Explore our curated list of must-visit destinations around the globe.</span>
