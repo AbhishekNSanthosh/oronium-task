@@ -22,10 +22,10 @@ export default function Header() {
           <Toggle />
           <div className="flex flex-row items-center gap-[30px] cursor-pointer">
             <div className="relative">
-              <div className="absolute bg-[#F9CF26] rounded-full text-[10px] font-semibold w-[20px] items-center justify-center h-[20px] bottom-[17px] right-[-10px] flex">
+              <div className="absolute bg-[#F9CF26] rounded-full text-[10px] font-semibold w-[20px] items-center justify-center h-[20px] bottom-[16px] right-[-9px] flex">
                 21
               </div>
-              <BsBookmarkDash className="text-[21px] cursor-pointer" />
+              <BsBookmarkDash className="text-[20px] cursor-pointer" />
             </div>
             <div className="relative">
               <div className="absolute bg-[#F9CF26] rounded-full text-[10px] font-semibold w-[20px] items-center justify-center h-[20px] bottom-[17px] right-[-10px] flex">
