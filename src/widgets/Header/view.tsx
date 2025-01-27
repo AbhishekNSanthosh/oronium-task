@@ -27,7 +27,7 @@ export default function Header() {
   const { data, error, loading } = useAsync(fetchLondonTime);
 
   return (
-    <div className="px-[30px] py-[3vh] text-gray-900">
+    <div className="lg:px-[30px] px-[20px] py-[3vh] text-gray-900">
       <div className=" h-[10vh] bg-white rounded-full px-[25px] flex items-center flex-row">
         <div className="flex-[0.5]">
           <Link href={"/"} className="font-black text-[25px]">
