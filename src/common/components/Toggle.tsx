@@ -10,7 +10,7 @@ const Toggle = () => {
   };
 
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex items-start justify-center">
       <label className="relative inline-flex items-center cursor-pointer">
         <input
           type="checkbox"
