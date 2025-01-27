@@ -1,11 +1,24 @@
+"use client";
 import Toggle from "@components/Toggle";
 import React from "react";
 import { BsBookmarkDash } from "react-icons/bs";
 import { IoCartOutline } from "react-icons/io5";
 import { HiOutlineMenu } from "react-icons/hi";
 import Image from "next/image";
+import { useAsync } from "../../common/Hooks/useAsync";
+import { fetchLondonTime } from "./services/api";
 
 export default function Header() {
+  const formatTime = (isoTime: string): string => {
+    const date = new Date(isoTime);
+    const hours = String(date.getHours()).padStart(2, "0");
+    const minutes = String(date.getMinutes()).padStart(2, "0");
+    const seconds = String(date.getSeconds()).padStart(2, "0");
+    return `${hours}:${minutes}:${seconds} London`;
+  };
+
+  const { data, error, loading } = useAsync(fetchLondonTime);
+
   return (
     <div className="px-[30px] py-[3vh] text-gray-900">
       <div className=" h-[10vh] bg-white rounded-full px-[25px] flex items-center flex-row">
@@ -13,10 +26,16 @@ export default function Header() {
           <span className="font-black text-[25px]">trvvrat</span>
         </div>
         <div className="flex-[2] flex items-center justify-start flex-row">
-          <div className="flex flex-row items-center space-x-3 font-semibold">
-            <span className="">06:01:00</span>
-            <span className="">London</span>
-          </div>
+          {loading ? (
+            <div
+              aria-label="Loading content"
+              className="animate-pulse w-[10rem] h-8 bg-gray-300 rounded-md"
+            ></div>
+          ) : (
+            <div className="flex flex-row items-center space-x-3 font-semibold">
+              <span>{formatTime(data)}</span>
+            </div>
+          )}
         </div>
         <div className="flex-[1] flex flex-row items-center gap-[60px] justify-end">
           <Toggle />

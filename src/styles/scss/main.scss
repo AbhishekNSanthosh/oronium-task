@@ -4,9 +4,28 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body {
   padding: 0;
   margin: 0;
-  background-color: #F8F8F8;
   font-family: $font-family;
+  background-color: #F8F8F8;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-snap-type: mandatory;
+  scroll-behavior: smooth;
+}
+* {
+  -webkit-tap-highlight-color: transparent; /* Safari and Chrome */
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #c3c3c3;
+  border-radius: 5px;
 }

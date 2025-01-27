@@ -4,9 +4,10 @@ import React from "react";
 import { MdArrowDownward } from "react-icons/md";
 import { IoArrowForward } from "react-icons/io5";
 
+
 export default function LandingPageContent() {
   return (
-    <div className="px-[30px] w-full py-2">
+    <div className="px-[30px] w-full py-2 mb-[140px]">
       <div className="relative">
         {/* Background Image */}
         <Image
