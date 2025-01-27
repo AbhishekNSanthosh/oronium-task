@@ -15,7 +15,7 @@ export default function LandingPageContent() {
           width={2000}
           height={2000}
         />
-        <div className="absolute top-[50px] left-[20px] border-white border rounded-full px-2 py-[2px] flex flex-row">
+        <div className="absolute top-[20px] left-[20px] lg:top-[50px] lg:left-[20px] border-white border rounded-full px-2 py-[2px] flex flex-row">
           <span className="text-white font-semibold text-sm">Lorem Ipsum</span>
         </div>
         <div className="absolute top-[50px] left-[200px] flex flex-col text-white">
@@ -29,17 +29,17 @@ export default function LandingPageContent() {
             <Image src={'/learnmore.svg'} alt=""  height={3000} width={3000} className="w-[200px]"/>
           </button>
         </div>
-        <div className="absolute bottom-[50px] left-[60px] text-white">
+        <div className="absolute bottom-[10px] left-[10px] lg:bottom-[50px] lg:left-[60px] text-white">
           <div className="relative">
-            <button className="w-[150px] h-[150px] rounded-full  border border-white flex items-center justify-center">
-              <MdArrowDownward className="text-[40px]" />
+            <button className="lg:w-[150px] w-[60px] h-[60px] lg:h-[150px] rounded-full  border border-white flex items-center justify-center">
+              <MdArrowDownward className="lg:text-[40px] text-[20px]" />
             </button>
-            <div className="w-[150px] h-[150px] rounded-full backdrop-blur-md border border-white absolute top-[-120px] flex items-center justify-center">
-              <span className="text-[18px]">Contact</span>
+            <div className="lg:w-[150px] w-[60px] h-[60px] lg:h-[150px] rounded-full backdrop-blur-md border border-white absolute top-[-48px] lg:top-[-120px] flex items-center justify-center">
+              <span className="lg:text-[18px] text-[10px]">Contact</span>
             </div>
           </div>
         </div>
-        <div className="absolute right-[100px] bottom-[-120px]">
+        <div className="absolute right-[100px] bottom-[-120px] hidden">
           <div className="relative flex flex-col items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +56,7 @@ export default function LandingPageContent() {
             <button className="absolute top-[7%] right-[15%] border-2 border-gray-500 p-3 rounded-full bg-white shadow-md">
               <IoArrowForward className="text-[19px]" />
             </button>
-            <div className="absolute w-[80%] bottom-[15px] text-center px-4 text-gray-700 font-semibold flex flex-col space-y-7">
+            <div className="absolute  w-[80%] bottom-[15px] text-center px-4 text-gray-700 font-semibold flex flex-col space-y-7">
               <div className="w-full flex items-center justify-start">
               <span className="text-left text-gray-800 text-[23px] font-semibold">Explore our curated list of must-visit destinations around the globe.</span>
               </div>
