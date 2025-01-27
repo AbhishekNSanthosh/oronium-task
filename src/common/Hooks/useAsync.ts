@@ -30,7 +30,7 @@ export const useAsync = <T>(
             setLoading(true);
             const result = await asyncFunction();
             setData(result);
-            onSuccess?.(result); // Call onSuccess callback if provided
+            onSuccess?.(result); // Call onSuccess callback if provided 
         } catch (err) {
             const errorMessage = (err as Error).message || "An error occurred";
             setError(errorMessage);
