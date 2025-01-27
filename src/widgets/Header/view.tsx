@@ -10,21 +10,29 @@ import { fetchLondonTime } from "./services/api";
 import Link from "next/link";
 
 export default function Header() {
+  // Function to format ISO time into "HH:MM:SS London" format
   const formatTime = (isoTime: string): string => {
-    const date = new Date(isoTime);
+    const date = new Date(isoTime); // Convert the ISO string to a Date object
+
+    // Get hours, minutes, and seconds, and add a "0" if they're single digits
     const hours = String(date.getHours()).padStart(2, "0");
     const minutes = String(date.getMinutes()).padStart(2, "0");
     const seconds = String(date.getSeconds()).padStart(2, "0");
+
+    // Return the formatted time
     return `${hours}:${minutes}:${seconds} London`;
   };
 
+  // Hook to manage async data
   const { data, error, loading } = useAsync(fetchLondonTime);
 
   return (
     <div className="px-[30px] py-[3vh] text-gray-900">
       <div className=" h-[10vh] bg-white rounded-full px-[25px] flex items-center flex-row">
         <div className="flex-[0.5]">
-          <Link href={'/'} className="font-black text-[25px]">trvvrat</Link>
+          <Link href={"/"} className="font-black text-[25px]">
+            trvvrat
+          </Link>
         </div>
         <div className="flex-[2] flex items-center justify-start flex-row">
           {loading ? (
