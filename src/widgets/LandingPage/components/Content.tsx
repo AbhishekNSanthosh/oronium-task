@@ -22,26 +22,11 @@ export default function LandingPageContent() {
           <span className="text-[80px] font-medium mb-6 leading-tight">
             Explore the <br /> world with us
           </span>
-          <button className="flex items-center bg-white shadow-[0px_4px_10px_rgba(0,0,0,0.2)] rounded-full overflow-hidden">
-            <span className="px-4 py-2 font-medium text-gray-700">
+          <button className="relative">
+            <span className="absolute font-semibold left-[20px] text-[17px] top-[19px] text-gray-900">
               Learn more
             </span>
-            <div className="w-10 h-10 bg-gray-900 text-white flex items-center justify-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={2}
-                stroke="currentColor"
-                className="w-4 h-4"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M5 12h14M12 5l7 7-7 7"
-                />
-              </svg>
-            </div>
+            <Image src={'/learnmore.svg'} alt=""  height={3000} width={3000} className="w-[200px]"/>
           </button>
         </div>
         <div className="absolute bottom-[50px] left-[60px] text-white">
